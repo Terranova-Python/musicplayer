@@ -43,7 +43,7 @@ def progress():
     a = pygame.mixer.Sound(f'{list_of_songs[n]}')
     song_len = a.get_length() * 3
     for i in range(0, math.ceil(song_len)):
-        time.sleep(.3)
+        time.sleep(.4)
         progressbar.set(pygame.mixer.music.get_pos() / 1000000)
 
 def threading():
